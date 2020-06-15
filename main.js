@@ -14,7 +14,8 @@
     var input_source = yaju1919.addInputText(h,{
         title: "source",
         textarea: true,
-        save: "source"
+        save: "source",
+        hankaku: false
     });
     h.append("<br>");
     $("<h2>",{text:"2.生成方法を選択"}).appendTo(h);
