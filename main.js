@@ -117,7 +117,9 @@
             }
 
         })(), inputNumberMultiple());
-        ar.forEach(function(v){ // クッソ時間かかる処理
+        ar.filter(function(v){
+            return v;
+        }).forEach(function(v){ // クッソ時間かかる処理
             markov.add(v);
         });
         activFunc = function(){
